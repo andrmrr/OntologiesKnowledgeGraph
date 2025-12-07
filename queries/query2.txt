@@ -1,0 +1,5 @@
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://fib.upc.edu/sdm/2024/MDS12-g3/author_name
+http://fib.upc.edu/sdm/2024/MDS12-g3/reviews
+http://fib.upc.edu/sdm/2024/MDS12-g3/corresponding_author
+http://fib.upc.edu/sdm/2024/MDS12-g3/writes

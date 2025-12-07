@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/cf_hosts> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/conference> ;
+    rdfs:subPropertyOf <http://fib.upc.edu/sdm/2024/MDS12-g3/hosts> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/cites> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/contains> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/abstract> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/corresponding_author> rdfs:subPropertyOf <http://fib.upc.edu/sdm/2024/MDS12-g3/writes> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/covers> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/topic> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/held_at> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/edition> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/time> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/held_in> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/edition> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/city> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/published_in_edition> a rdf:Property ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/edition> ;
+    rdfs:subPropertyOf <http://fib.upc.edu/sdm/2024/MDS12-g3/published_in> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/published_in_volume> a rdf:Property ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/volume> ;
+    rdfs:subPropertyOf <http://fib.upc.edu/sdm/2024/MDS12-g3/published_in> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/publishes> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/journal> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/volume> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/reviews> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/author> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/ws_hosts> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/workshop> ;
+    rdfs:subPropertyOf <http://fib.upc.edu/sdm/2024/MDS12-g3/hosts> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/conference> rdfs:subClassOf <http://fib.upc.edu/sdm/2024/MDS12-g3/venue> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/workshop> rdfs:subClassOf <http://fib.upc.edu/sdm/2024/MDS12-g3/venue> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/writes> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/author> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/hosts> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/venue> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/edition> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/published_in> a rdf:Property ;
+    rdfs:domain <http://fib.upc.edu/sdm/2024/MDS12-g3/paper> ;
+    rdfs:range <http://fib.upc.edu/sdm/2024/MDS12-g3/publication> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/volume> rdfs:subClassOf <http://fib.upc.edu/sdm/2024/MDS12-g3/publication> .
+
+<http://fib.upc.edu/sdm/2024/MDS12-g3/edition> rdfs:subClassOf <http://fib.upc.edu/sdm/2024/MDS12-g3/publication> .
+
+
