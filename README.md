@@ -1,6 +1,8 @@
-# Knowledge Graph
-## SDM Lab2
+# Knowledge Graph Ontology for Academic Publications
 
+The goal of this project is an **ontology** for analysis of academic publications using **RDFS** for data storage and processing. The project was done using **RDFS** library in **Python**. The project was an assignment for Semantic Data Management master's course conducted in a two people team. Further details about the assignment can be found in *Assignment.pdf*. The project includes creation of the ontology and its corresponding **SPARQL** queries.
+
+## Instructions
 ### Export data command from Property Graph in neo4j v5:
 CALL apoc.export.xls.all("property_graphs2.xls",{})
 
